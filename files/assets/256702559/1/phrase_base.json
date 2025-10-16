@@ -1,0 +1,344 @@
+{
+    "phrases": [
+        {
+            "title": "Mito",
+            "text": "Recuerdo que cuando empecé a estudiar Conta me decían que era muy difícil, y ¡que va!, los que dicen eso están equivocados. No se trata sólo de números y cuentas; la Conta es más que eso ...",
+            "level": "50"
+        },
+        {
+            "title": "Mito",
+            "text": "No hay que ser un matemático para ser Contador. Con que sepas sumar, restar, multiplicar y dividir, te servirá para ser un gran contador.",
+            "level": "51"
+        },
+        {
+            "title": "Mito",
+            "text": "Ser @conta me ha hecho crecer y conocer más sobre temas de Economía y Derecho.",
+            "level": "52"
+        },
+        {
+            "title": "Mito",
+            "text": "Los contadores nunca pasaremos de moda. Aunque haya más sistemas, necesitarán de nuestra experiencia y el control humano para llevar a cabo la labor contable y la toma correcta de decisiones.",
+            "level": "53"
+        },
+        {
+            "title": "Mito",
+            "text": "Algunos dicen que los contadores sólo llenamos libros y ya. Pues ¡No! También aportamos a diversas áreas en las empresas.",
+            "level": "54"
+        },
+        {
+            "title": "Mito",
+            "text": "Algunos me decían que como yo no era bueno en Mate y sacaba notas regulares pues no serviría para estudiar Conta. ¡Mentira! Mírame aquí trabajando para esta gran empresa, ya soy todo un Contador de Nivel.",
+            "level": "55"
+        },
+        {
+            "title": "Mito",
+            "text": "Gracias a que estudié Conta estoy trabajando aquí en esta empresa Top. Es un perfil muy requerido actualmente en el mercado laboral.",
+            "level": "56"
+        },
+        {
+            "title": "Mito",
+            "text": "¡La Contabilidad No es aburrida! En realidad ser @conta me ha ayudado a que yo resuelva mis problemas financeros de forma más eficiente.",
+            "level": "57"
+        },
+        {
+            "title": "Mito",
+            "text": "Recuerdo cuando empezamos a estudiar la carrera de Conta. Mírate, ya en la Gerencia de la empresa, líder de la Jefatura de Contabilidad.",
+            "level": "58"
+        },
+        {
+            "title": "Mito",
+            "text": "Algunos piensan que estudiar Conta sólo te servirá para ser Contador Público. Míranos acá, en esta gran Empresa Privada. En realidad con Conta podrías trabajar en cualquier ámbito.",
+            "level": "59"
+        },
+        {
+            "title": "Mito",
+            "text": "La ventaja de trabajar en el área Contable es que uno puede también aspirar a puestos de Teletrabajo. Ser contador se puede hacer perfectamente desde tu casa.",
+            "level": "60"
+        },
+        {
+            "title": "Mito",
+            "text": "Ser @conta me ha permitido emprender. Pronto tendré mi propia empresa.",
+            "level": "61"
+        },
+        {
+            "title": "Mito",
+            "text": "Sabías que si estudias Conta, puedes trabajar con este título fuera del país ... ¡Nuestra especialidad es internacional! Dentro de un mes me iré para Canadá gracias a la Contabilidad.",
+            "level": "62"
+        },
+        {
+            "title": "Mito",
+            "text": "Las personas que eligen estudiar Contabilidad podrán gozar de un futuro con buenos salarios y una buena calidad de vida.",
+            "level": "63"
+        },
+        {
+            "title": "Mito",
+            "text": "Todas las empresas y organizaciones necesitan de un profesional con conocimientos sólidos que sea capaz de organizar las finanzas y recursos, por ello la demanda profesional de contadores siempre es alta y los profesionales del sector tienen menos posibilidades de sufrir desempleo.",
+            "level": "64"
+        },
+        {
+            "title": "Mito",
+            "text": "Si estudias Conta puedes trabajar en puestos de Administración, Recursos Humanos, Mercadeo, Finanzas, Banca ... ¡Wow! hay muchas opciones.",
+            "level": "65"
+        },
+        {
+            "title": "@PLAYER_NAME",
+            "text": "\"Ser contador te permite multiplicar sueños, sumar realizaciones, restar malas decisiones y dividir los problemas a la mitad.\"",
+            "level": "100"
+        },
+        {
+            "title": "",
+            "text": "¡@welcome @player_name! \n\n Tu misión será solicitar un material al Programa de Producción Electrónica Multimedial (PEM).",
+            "level": "99"
+        },
+        {
+            "title": "CONTADORA GENERAL",
+            "text": "Jefa",
+            "level": "98"
+        },
+        {
+            "title": "CONTADOR GENERAL",
+            "text": "Jefe",
+            "level": "97"
+        },
+        {
+            "title": "Bienvenida",
+            "text": "la Jefa",
+            "level": "96"
+        },
+        {
+            "title": "Bienvenido",
+            "text": "el Jefe",
+            "level": "95"
+        },
+        {
+            "title": "Info",
+            "text": "Valor en libros: Es el valor con el cual un activo se encuentra registrado en el balance de una empresa. \n\n Depreciación: Es la pérdida de valor de un bien como consecuencia de su desgaste con el paso del tiempo.",
+            "level": "94"
+        },
+        {
+            "title": "Info",
+            "text": "Los Activos de una empresa corresponden a los bienes, derechos y otros recursos de los que esta dispone, pudiendo ser, por ejemplo: muebles, inventario, edificios, equipos informáticos, terrenos, entre otros.",
+            "level": "93"
+        },
+        {
+            "title": "Info",
+            "text": "Un futbolín. No necesito nada más en mi vida.",
+            "level": "92"
+        },
+        {
+            "title": "Info",
+            "text": "Contabilidad en el CTP José Figueres Ferrer; es más que una especialidad, somos una familia...",
+            "level": "91"
+        },
+        {
+            "title": "Chat",
+            "text": "contadora",
+            "level": "90"
+        },
+        {
+            "title": "Chat",
+            "text": "contador",
+            "level": "89"
+        },
+        {
+            "title": "ROCÍO - AUXILIAR ADMINISTRATIVO",
+            "text": "Buenos días, bienvenido al Programa de Producción Electrónica Multimedial, ¿en qué le puedo ayudar?",
+            "level": "0"
+        },
+        {
+            "title": "SECRETARIA",
+            "text": "¡Buenos días @boss! Te he enviado un correo electrónico con las tareas asignadas que me pediste. En tu escritorio podrás ver el correo con el avance y cumplimiento de las actividades. ¡Tus asistentes contables necesitan de tu ayuda!",
+            "level": "1"
+        },
+        {
+            "title": "ENCARGADO DE CUENTAS POR COBRAR",
+            "text": "¡@boss! te informo que del 100% de la cartera de clientes, un 50% está atrasada, lo cual afecta a la liquidez de la empresa.",
+            "level": "2"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Comprendo. Entonces iré donde el Abogado a solicitar las Cartas de Cobro Judicial para solucionar esto. Gracias.",
+            "level": "3"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¡Hola!, Buenos días, Abogado. Necesito por favor las Cartas de Cobro Judicial, las cuales serán enviadas a los Clientes. Gracias.",
+            "level": "4"
+        },
+        {
+            "title": "ABOGADO",
+            "text": "Buen día. Aquí tienes las Cartas de Cobro Judicial listas. Ya puedes ir a entregárselas al Encargado de Cuentas por Cobrar.",
+            "level": "5"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Aquí tienes las Cartas de Cobro Judicial. Ya las puedes enviar a los Clientes.",
+            "level": "6"
+        },
+        {
+            "title": "ENCARGADO DE CUENTAS POR COBRAR",
+            "text": "¡Excelente! Muchas gracias @boss. ¡Listo! Ya envié las Cartas de Cobro Judicial a los Clientes.",
+            "level": "7"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¡Excelente! ¡Buen Trabajo! Con esto hemos recuperado el 75% de la cartera, aumentando así la liquidez de la empresa.",
+            "level": "8"
+        },
+        {
+            "title": "ENCARGADA DE CUENTAS POR PAGAR",
+            "text": "¡@boss! Te informo que nuestro Proveedor de Materiales no quiere despachar los pedidos debido a que estamos morosos, lo que significa que se nos va a retrasar la producción.",
+            "level": "9"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Entiendo. Iré al Departamento de Tesorería para solicitar que verifiquen si hay dinero en la cuenta de la empresa y así poder darte el Comprobante de la Transferencia.",
+            "level": "10"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¡Hola!, Buen día, Tesorera. Necesito por favor que verifiques si hay dinero en la cuenta de la empresa y, de ser así, realices el pago al Proveedor de Materiales, para que me des el comprobante de la Transferencia. Gracias.",
+            "level": "11"
+        },
+        {
+            "title": "TESORERA",
+            "text": "¡Hola!, Buenos días. Te confirmo que sí hay dinero en la cuenta. La Transferencia al Proveedor de Materiales se ha realizado de forma exitosa. Aquí tienes el Comprobante para que se lo des a la Encargada de Cuentas por Pagar.",
+            "level": "12"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Aquí tienes el Comprobante de la Transferencia. Por favor envíalo al Proveedor.",
+            "level": "13"
+        },
+        {
+            "title": "ENCARGADA DE CUENTAS POR PAGAR",
+            "text": "¡Buenas noticias @boss!, ya envié el Comprobante y el Proveedor de Materiales me comunica que enviará los pedidos ahora mismo.",
+            "level": "14"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¡Muy Bien! Con esto no nos atrasaremos en la producción.",
+            "level": "15"
+        },
+        {
+            "title": "AUXILIAR CONTABLE",
+            "text": "¡@boss, que bueno que estás aquí!, necesito de tu ayuda. Te notifico que Proveeduría no ha enviado las placas pendientes para hacer el Inventario de Activos de la empresa.",
+            "level": "16"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¿Qué? ¿Otra vez? No me quedará otra que ir a mi escritorio y llamar a Proveeduría, para que nos brinden la información.",
+            "level": "17"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Aquí está mi teléfono. Ahora mismo llamaré a Proveeduría.",
+            "level": "18"
+        },
+        {
+            "title": "LLAMADA EN PROCESO",
+            "text": " ... Llamando ... Solicitando las placas a Proveeduría ... ",
+            "level": "19"
+        },
+        {
+            "title": "ENCARGADO DE PROVEEDURÍA",
+            "text": "¡Buenas! Aquí tienes el paquete con las Placas de los Activos que nos solicitó.",
+            "level": "20"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Ahora actualizaré la información y generaré un reporte completo de Activos.",
+            "level": "21"
+        },
+        {
+            "title": "DISEÑO DE REPORTE DE ACTIVOS",
+            "text": " ... Actualizando información ... Generando Reporte Final ... ",
+            "level": "22"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¡Listo! Todo está correcto y debidamente actualizado. Ahora llevaré este Reporte y las Placas al Auxiliar Contable.",
+            "level": "23"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Aquí tienes el Reporte y las Placas. Por favor realiza el conteo físico de los Activos.",
+            "level": "24"
+        },
+        {
+            "title": "AUXILIAR CONTABLE",
+            "text": "¡Gracias @boss! Ahora mismo procedo con el conteo.",
+            "level": "25"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¡Excelente! Todo listo con lo relacionado al Inventario y a Proveeduría.",
+            "level": "26"
+        },
+        {
+            "title": "AUXILIAR CONTABLE",
+            "text": "¡Hola @boss! ¿Recuerdas el vehículo de la empresa que teniamos en venta? Pues ya tiene un comprador, y necesito el resultado del cálculo del Valor en Libros del activo, para así hacer el registro contable de la venta.",
+            "level": "27"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¡Perfecto! Entonces iré a buscar los datos del vehículo con mi secretaria, para poder calcular la Depreciación, y así luego traerte el Valor en Libros que necesitas.",
+            "level": "28"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Por favor dame la carpeta con los datos del Vehículo que teníamos en venta. Gracias.",
+            "level": "29"
+        },
+        {
+            "title": "SECRETARIA",
+            "text": "Claro @boss, aquí tienes la información. Con gusto.",
+            "level": "30"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Con esta información podré calcular la Depreciación del Vehículo y así obtener el Valor en Libros. Recuerdo que las Fórmulas las anoté en la Pizarra, en la sala de exposiciones. Ahí también está la Calculadora.",
+            "level": "31"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Aquí están las Fórmulas. Justo lo que necesito.",
+            "level": "32"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Ahora activaré la Super Calculadora, la cual me mostrará los datos que están dentro de la carpeta.",
+            "level": "33"
+        },
+        {
+            "title": "SUPER CALCULADORA",
+            "text": "Selecciona los valores correspondientes de las fórmulas y ejecuta las operaciones, presionando directamente los botones '—', '÷' ó '=' en la calculadora, según sea el caso. Usa 'AC' para borrar todo y empezar.",
+            "level": "34"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¡Genial! Ya tengo la Depreciación. Ahora necesito obtener el Valor en Libros.",
+            "level": "35"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¡Listo! ¡Al fin! Ya tengo el Valor en Libros. Llevaré esta información al Auxiliar Contable.",
+            "level": "36"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "Aquí tienes el Valor en Libros que necesitabas. Dicho valor corresponde a ¢1.620.000.",
+            "level": "37"
+        },
+        {
+            "title": "AUXILIAR CONTABLE",
+            "text": "¡Wow que rápido! ¡Gracias @boss! Ahora ya podré hacer el Registro Contable de la venta.",
+            "level": "38"
+        },
+        {
+            "title": "@PLAYER_TITLE",
+            "text": "¡Excelente! Todo listo por hoy. ¡Que agotador! Pero valió la pena. Es hora de irme. Iré a revisar mi correo y luego iré por mi auto. Mi casita me espera.",
+            "level": "39"
+        }
+    ]
+}
