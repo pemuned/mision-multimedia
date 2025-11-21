@@ -90,7 +90,7 @@
         },
         {
             "title": "JUAN DIEGO - COORDINACIÓN DEL PEM",
-            "text": "Claro, para comenzar el proceso usted tiene que llenar el formulario de solicitud que se encuentra en nuestra página web, y adjuntar una serie de documentos que son requisito. Justo ahora se encuentra abierto el período de recepción.",
+            "text": "Claro, para comenzar hay que llenar el formulario de solicitud que se encuentra en nuestra página web, y adjuntar una serie de documentos que son requisito. Justo ahora se encuentra abierto el período de recepción.",
             "level": "6"
         },
         {
@@ -105,7 +105,7 @@
         },
         {
             "title": "@player_name - @player_title",
-            "text": "He llegado al Área de Preproducción, estoy list@_o_a para reunirme con la persona funcionaria de producción académica que me asignaron.",
+            "text": "He llegado al Área de Preproducción, estoy list@_o_a para reunirme con el personal de producción de producción académica que me asignaron.",
             "level": "9"
         },
         {
@@ -115,7 +115,7 @@
         },
         {
             "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
-            "text": "Después de estos procesos ya contamos con el contenido final para elaborar el guion. Le enviaré actualizaciones por correo electrónico y pronto coordinaré una reunión virtual para obtener su visto bueno. Voy a producir el guion.",
+            "text": "Después de este proceso ya contamos con el contenido final para elaborar el guion. Le enviaré actualizaciones por correo electrónico y pronto coordinaré una reunión virtual para obtener su visto bueno. Voy a producir el guion.",
             "level": "11"
         },
         {
@@ -185,7 +185,7 @@
         },
         {
             "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
-            "text": "Excelente trabajo como siempre equipo. Iré a la sala de juntas para reunirme con @player_name a presentrale el material y así obtener su visto bueno para la publicación final.",
+            "text": "Excelente trabajo como siempre equipo. Iré a la sala de reuniones para encontrarme con @player_name y presentrarle el material con el fin de obtener su visto bueno para la publicación final.",
             "level": "25"
         },
         {
