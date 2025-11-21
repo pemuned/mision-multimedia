@@ -1,0 +1,264 @@
+/* ===========================================
+   MINIGAME 1 - ESTILOS ESPECÍFICOS
+   (Estilos comunes en global.css)
+=========================================== */
+
+/* Campos del formulario */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6px, 1vh, 8px);
+  animation: fadeIn 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.form-field:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.form-field:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.form-field:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.form-field:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.form-field:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+/* Etiqueta del campo */
+.field-label {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5),
+    rgba(232, 238, 247, 0.3)
+  );
+  height: clamp(10px, 1.5vh, 14px);
+  border-radius: 6px;
+  width: clamp(80px, 35%, 140px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Campo de entrada */
+.field-input {
+  background: rgba(255, 255, 255, 0.85);
+  height: clamp(28px, 4vh, 38px);
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1),
+    0 1px 0 rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(74, 124, 214, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.field-input::after {
+  content: "";
+  position: absolute;
+  left: clamp(8px, 1.5vw, 12px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  height: 35%;
+  background: linear-gradient(
+    90deg,
+    rgba(74, 124, 214, 0.15),
+    rgba(74, 124, 214, 0.05),
+    transparent
+  );
+  border-radius: 4px;
+}
+
+/* Variantes de tamaño */
+.field-input.short {
+  width: 48%;
+}
+
+.field-input.medium {
+  width: 70%;
+}
+
+/* Grupo de campos en línea */
+.field-row {
+  display: flex;
+  gap: clamp(10px, 2vw, 16px);
+  width: 100%;
+}
+
+.field-row .form-field {
+  flex: 1;
+}
+
+/* Sección de adjuntar documentos */
+.attach-section {
+  margin-top: auto;
+  padding: clamp(15px, 2.5vh, 20px);
+  background: linear-gradient(
+    135deg,
+    rgba(245, 248, 252, 0.4),
+    rgba(232, 238, 247, 0.3)
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 15px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  flex-shrink: 0;
+}
+
+.attach-label {
+  font-weight: 700;
+  color: #313131;
+  margin-bottom: 12px;
+  font-size: clamp(14px, 2vmin, 20px);
+}
+
+/* Zonas de drop específicas para documentos */
+.drop-zones {
+  display: flex;
+  gap: clamp(12px, 2vw, 20px);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.drop-zone {
+  flex: 1;
+  min-height: clamp(120px, 18vh, 180px);
+  border: 6px dashed rgba(255, 255, 255, 0.6);
+}
+
+.drop-zone:hover {
+  border-color: rgba(74, 124, 214, 0.8);
+  background: linear-gradient(
+    135deg,
+    rgba(232, 240, 255, 0.8),
+    rgba(219, 232, 252, 0.6)
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(74, 124, 214, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.drop-zone:hover svg {
+  transform: rotate(90deg);
+}
+
+.drop-zone.filled {
+  border-style: solid;
+  border-color: rgba(95, 200, 143, 0.8);
+  background: linear-gradient(
+    135deg,
+    rgba(231, 249, 240, 0.7),
+    rgba(211, 241, 228, 0.6)
+  );
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-width: 4px;
+  box-shadow: 0 4px 15px rgba(95, 200, 143, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.drop-zone.drag-over {
+  border-color: rgba(244, 211, 94, 0.9);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 249, 230, 0.9),
+    rgba(254, 246, 220, 0.7)
+  );
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(244, 211, 94, 0.6),
+    0 4px 20px rgba(244, 211, 94, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.dropped-item .doc-icon svg,
+.dropped-item .doc-icon img {
+  color: #5fc88f;
+  filter: drop-shadow(0 4px 8px rgba(95, 200, 143, 0.5));
+}
+
+.dropped-item span {
+  font-weight: 700;
+  font-size: clamp(12px, 1.4vmin, 20px);
+  color: #2d5f4a;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Botón de envío usa estilos de global.css */
+
+/* Responsive específico */
+@media (max-width: 950px) or (max-height: 700px) {
+  .docs-title {
+    width: 100%;
+    justify-content: center;
+    padding: 2px;
+  }
+
+  .dropped-item span {
+    display: none;
+  }
+
+  .draggable-item {
+    max-width: clamp(100px, 28vw, 150px);
+    flex-direction: row;
+    gap: 0px;
+    border: none;
+  }
+
+  .game-header {
+    position: relative;
+    top: -15px;
+  }
+
+  .speech-bubble {
+    padding: 8px 4px;
+  }
+
+  .speech-bubble::before {
+    display: none;
+  }
+
+  .form-field {
+    display: none;
+  }
+
+  .drop-zones {
+    gap: 10px;
+  }
+
+  .drop-zone {
+    min-height: 0px;
+    padding: clamp(2px, 1vh, 5px);
+  }
+
+  .success-screen {
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .success-screen .success-icon {
+    padding: 0;
+  }
+
+  .draggable-item {
+    padding: 0;
+  }
+
+  .form-body {
+    display: block;
+    padding: 2px;
+  }
+
+  .field-for-fullheight {
+    display: none;
+  }
+}

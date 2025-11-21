@@ -1,0 +1,536 @@
+/* ===========================================
+   MINIGAME 2 - ESTILOS ESPECÍFICOS
+   (Estilos comunes en global.css)
+=========================================== */
+
+/* Contenedor horizontal específico con avatares centrados */
+.game-content {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Avatares laterales específicos de minigame2 */
+.side-avatar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: fadeIn 0.8s ease-out 0.2s both;
+  min-width: clamp(100px, 13vw, 180px);
+  padding-bottom: clamp(10px, 2vh, 20px);
+  position: relative;
+  top: 8%;
+}
+
+.avatar-container {
+  background: white;
+  border-radius: 50%;
+  padding: clamp(20px, 3vh, 35px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  animation: avatarFloat 3s ease-in-out infinite;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-avatar .avatar-container {
+  animation-delay: 0s;
+}
+
+.right-avatar .avatar-container {
+  animation-delay: 1.5s;
+}
+
+@keyframes avatarFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(0) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
+
+.avatar-container svg {
+  display: block;
+  color: #5b8feb;
+  width: clamp(80px, 12vmin, 140px);
+  height: clamp(80px, 12vmin, 140px);
+}
+
+.avatar-container img {
+  display: block;
+  width: clamp(80px, 12vmin, 140px);
+  height: clamp(80px, 12vmin, 140px);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Área central específica con globo de pensamiento */
+.center-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(15px, 2vh, 20px);
+  max-width: clamp(550px, 70vw, 850px);
+  width: 100%;
+  position: relative;
+}
+
+/* Tooltip - globo de pensamiento con colas laterales */
+.tooltip {
+  --b: clamp(2.5em, 4vw, 3.5em); /* tail dimension */
+  --p: 50%; /* main position (50% = center) */
+  --r: clamp(1.2em, 2.5vw, 2em); /* the radius */
+
+  padding: clamp(25px, 3.5vh, 40px);
+  border-radius: var(--r) / min(var(--r), var(--p) - var(--b) / 4) var(--r)
+    var(--r) min(var(--r), 100% - var(--p) - var(--b) / 4);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(255, 255, 255, 0.95) 100%
+  );
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border: none;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35),
+    inset 0 2px 5px rgba(255, 255, 255, 1), 0 0 0 3px rgba(91, 143, 235, 0.3);
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  animation: cloudFloat 4s ease-in-out infinite;
+  overflow: visible;
+  min-height: 0;
+}
+
+/* Cola izquierda */
+.tooltip::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: clamp(0%, var(--p) - var(--b) / 4, 100% - var(--b) / 2);
+  width: var(--b);
+  aspect-ratio: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(255, 255, 255, 0.95) 100%
+  );
+  --g: #000 calc(100% - 1px), #0000;
+  -webkit-mask: radial-gradient(circle closest-side at 12% 88%, var(--g)),
+    radial-gradient(20% 20% at 45% 48%, var(--g)),
+    radial-gradient(25% 25% at 100% 25%, var(--g));
+  mask: radial-gradient(circle closest-side at 12% 88%, var(--g)),
+    radial-gradient(20% 20% at 45% 48%, var(--g)),
+    radial-gradient(25% 25% at 100% 25%, var(--g));
+}
+
+/* Cola derecha */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: clamp(0%, var(--p) - var(--b) / 4, 100% - var(--b) / 2);
+  width: var(--b);
+  aspect-ratio: 1;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(255, 255, 255, 0.95) 100%
+  );
+  --g: #000 calc(100% - 1px), #0000;
+  -webkit-mask: radial-gradient(circle closest-side at 88% 88%, var(--g)),
+    radial-gradient(20% 20% at 55% 48%, var(--g)),
+    radial-gradient(25% 25% at 0 25%, var(--g));
+  mask: radial-gradient(circle closest-side at 88% 88%, var(--g)),
+    radial-gradient(20% 20% at 55% 48%, var(--g)),
+    radial-gradient(25% 25% at 0 25%, var(--g));
+}
+
+@keyframes cloudFloat {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35),
+      inset 0 2px 5px rgba(255, 255, 255, 1), 0 0 0 3px rgba(91, 143, 235, 0.3);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.01);
+    box-shadow: 0 20px 60px rgba(91, 143, 235, 0.4),
+      inset 0 2px 5px rgba(255, 255, 255, 1), 0 0 0 5px rgba(91, 143, 235, 0.5);
+  }
+}
+
+/* Lista ordenable */
+.sortable-list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 1.5vh, 14px);
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: clamp(8px, 1.2vh, 12px);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(74, 124, 214, 0.4) transparent;
+  transition: all 0.3s ease;
+}
+
+.sortable-list.drag-active {
+  background: rgba(91, 143, 235, 0.05);
+  border-radius: 10px;
+}
+
+.sortable-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sortable-list::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.sortable-list::-webkit-scrollbar-thumb {
+  background: rgba(74, 124, 214, 0.4);
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.sortable-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(74, 124, 214, 0.6);
+}
+
+/* Item ordenable */
+.sortable-item {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 3px solid #4a7cd6;
+  border-radius: 15px;
+  padding: clamp(12px, 2vh, 16px);
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 1.5vw, 14px);
+  cursor: grab;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  flex-shrink: 0;
+  min-height: clamp(50px, 8vh, 70px);
+}
+
+.sortable-item:hover {
+  transform: translateX(5px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(74, 124, 214, 0.4);
+  border-color: #5b8feb;
+}
+
+.sortable-item.dragging {
+  opacity: 0.7;
+  cursor: grabbing;
+  transform: rotate(5deg) scale(1.08);
+  box-shadow: 0 15px 40px rgba(91, 143, 235, 0.6),
+    0 0 0 4px rgba(91, 143, 235, 0.3), 0 0 30px rgba(91, 143, 235, 0.4);
+  border-color: #5b8feb;
+  z-index: 1000;
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  animation: dragPulse 0.6s ease-in-out infinite;
+}
+
+@keyframes dragPulse {
+  0%,
+  100% {
+    transform: rotate(5deg) scale(1.08);
+  }
+  50% {
+    transform: rotate(5deg) scale(1.1);
+  }
+}
+
+.sortable-item.drag-over {
+  border-color: #f4d35e;
+  background: linear-gradient(135deg, #fff9e6 0%, #fef3d1 100%);
+  box-shadow: 0 0 0 3px rgba(244, 211, 94, 0.4),
+    0 8px 25px rgba(244, 211, 94, 0.3);
+  transform: translateY(-3px) scale(1.03);
+}
+
+.sortable-item.just-dropped {
+  animation: dropBounce 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes dropBounce {
+  0% {
+    transform: scale(1.1) rotate(0deg);
+  }
+  50% {
+    transform: scale(0.95) rotate(-2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.sortable-item.wrong-order {
+  animation: shake 0.5s ease-in-out;
+  border-color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.1);
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.step-number {
+  background: linear-gradient(135deg, #f4d35e, #e8b931);
+  color: #333;
+  width: clamp(35px, 5vmin, 45px);
+  height: clamp(35px, 5vmin, 45px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: clamp(16px, 2.5vmin, 20px);
+  flex-shrink: 0;
+  box-shadow: 0 3px 10px rgba(244, 211, 94, 0.5);
+  transition: all 0.3s ease;
+}
+
+.sortable-item.dragging .step-number {
+  background: linear-gradient(135deg, #5b8feb, #4a7cd6);
+  color: white;
+  transform: scale(1.15);
+  box-shadow: 0 5px 15px rgba(91, 143, 235, 0.6);
+}
+
+.sortable-item.drag-over .step-number {
+  animation: numberPulse 0.5s ease-in-out infinite;
+}
+
+@keyframes numberPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.step-content {
+  display: flex;
+  align-items: center;
+  gap: clamp(6px, 1vw, 10px);
+  flex: 1;
+  min-width: 0;
+}
+
+.drag-handle {
+  color: #999;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+  padding: 5px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.sortable-item:hover .drag-handle {
+  color: #4a7cd6;
+  transform: scale(1.1);
+}
+
+.sortable-item.dragging .drag-handle {
+  color: #5b8feb;
+  animation: handleShake 0.3s ease-in-out infinite;
+}
+
+@keyframes handleShake {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.drag-handle svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.step-text {
+  color: #333;
+  font-size: clamp(14px, 2.2vmin, 17px);
+  font-weight: 600;
+  line-height: 1.4;
+  flex: 1;
+}
+
+/* Responsive específico */
+/* Pantallas grandes - mantener horizontal pero ajustar proporciones */
+@media (max-width: 1400px) {
+  .center-area {
+    max-width: clamp(500px, 68vw, 800px);
+  }
+
+  .tooltip {
+    --b: clamp(2.2em, 3.5vw, 3em);
+  }
+
+  .side-avatar {
+    min-width: clamp(90px, 12vw, 160px);
+  }
+
+  .avatar-container svg,
+  .avatar-container img {
+    width: clamp(75px, 11vmin, 130px);
+    height: clamp(75px, 11vmin, 130px);
+  }
+}
+
+/* Tablets horizontal - mantener estructura */
+@media (max-width: 1024px) {
+  .side-avatar {
+    min-width: clamp(80px, 11vw, 140px);
+    padding-bottom: clamp(8px, 1.5vh, 15px);
+  }
+
+  .avatar-container {
+    padding: clamp(15px, 2vh, 25px);
+  }
+
+  .avatar-container svg,
+  .avatar-container img {
+    width: clamp(60px, 9vmin, 110px);
+    height: clamp(60px, 9vmin, 110px);
+  }
+
+  .center-area {
+    max-width: clamp(450px, 65vw, 700px);
+  }
+
+  .tooltip {
+    --b: clamp(2em, 3.2vw, 2.8em);
+    padding: clamp(20px, 3vh, 35px);
+  }
+
+  .sortable-item {
+    padding: clamp(10px, 1.8vh, 14px);
+    min-height: clamp(48px, 7.5vh, 65px);
+  }
+
+  .step-number {
+    width: clamp(32px, 4.5vmin, 42px);
+    height: clamp(32px, 4.5vmin, 42px);
+    font-size: clamp(15px, 2.3vmin, 19px);
+  }
+
+  .step-text {
+    font-size: clamp(13px, 2vmin, 16px);
+  }
+}
+
+/* Tablets vertical y móviles grandes - ocultar avatares laterales */
+@media (max-width: 950px) or (max-height: 700px){
+  .game-content {
+    flex-direction: column;
+    gap: clamp(12px, 2vh, 18px);
+  }
+
+  .game-header {
+    position: relative;
+    top: -15px;
+  }
+
+  .side-avatar {
+    min-width: auto;
+  }
+
+  .left-avatar,
+  .right-avatar {
+    display: none;
+  }
+
+  .thought-circles {
+    display: none;
+  }
+
+  .center-area {
+    max-width: 100%;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .tooltip {
+    padding: 4px;
+  }
+
+  .speech-bubble {
+    padding: 8px 4px;
+  }
+
+  .speech-bubble::before {
+    display: none;
+  }
+
+  .success-screen {
+    max-width: 90%;
+  }
+
+  .sortable-item {
+    min-height: clamp(52px, 8.5vh, 72px);
+    padding: 2px;
+  }
+
+  .step-text {
+    font-size: clamp(13px, 2.3vmin, 16px);
+  }
+
+  .step-number {
+    width: clamp(33px, 4.8vmin, 43px);
+    height: clamp(33px, 4.8vmin, 43px);
+    font-size: clamp(15px, 2.4vmin, 19px);
+  }
+
+  .sortable-list {
+    gap: 1px;
+    padding: 1px;
+  }
+
+  .success-screen {
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .success-screen .success-icon {
+    padding: 0;
+  }
+}

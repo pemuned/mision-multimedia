@@ -1,0 +1,373 @@
+<div class="modal hidden">
+    <div id="background-modal"></div>
+    <div class="modal-content">
+
+        <div class="game-container">
+            <!-- Título del juego -->
+            <div class="game-header">
+                <div class="character-avatar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M3 21v-2a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2" />
+                    </svg>
+                </div>
+                <div class="speech-bubble">
+                    <p>¡Desarrolla el sitio web! Arrastra los componentes de código para dar vida al proyecto.</p>
+                </div>
+            </div>
+
+            <!-- Contenedor principal horizontal -->
+            <div class="game-content">
+                <!-- Preview del sitio web (izquierda) -->
+                <div class="form-area">
+                    <div class="form-header">
+                        <h2>DESARROLLO DEL MATERIAL EDUCATIVO WEB</h2>
+                    </div>
+                    <div class="form-body">
+                        <!-- Preview del sitio web -->
+                        <div class="website-preview">
+                            <!-- Sitio web final (oculto inicialmente) -->
+                            <div class="final-website" id="finalWebsite" style="display: none;">
+                                <!-- Banner superior -->
+                                <div class="website-banner">
+                                    <img src="https://www.uned.ac.cr/dpmd/pem/images/solicitudproduccion1.jpg?w=1200&h=400&fit=crop"
+                                        alt="Material Educativo Banner"
+                                        onerror="this.src='https://via.placeholder.com/1200x400/4a7cd6/ffffff?text=Material+Educativo'">
+                                    <div class="banner-overlay">
+                                        <h1>Material Educativo Interactivo</h1>
+                                        <p>Aprende de forma práctica y divertida</p>
+                                    </div>
+                                </div>
+
+                                <!-- Contenido: Texto + Video -->
+                                <div class="website-content-grid">
+                                    <!-- Texto informativo (izquierda) -->
+                                    <div class="website-text">
+                                        <h2>Te damos la bienvenida al material</h2>
+                                        <p>Este material educativo ha sido diseñado especialmente para facilitar tu
+                                            aprendizaje a través de recursos interactivos y multimedia.</p>
+
+                                        <h3>¿Qué aprenderás?</h3>
+                                        <ul>
+                                            <li>Proceso de producción audiovisual</li>
+                                            <li>Diseño de interfaces y experiencia de usuario</li>
+                                            <li>Manejo de bases de datos y contenido dinámico</li>
+                                            <li>Implementación de elementos multimedia</li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Video tutorial (derecha) -->
+                                    <div class="website-video">
+                                        <div class="video-wrapper">
+                                            <iframe
+                                                src="https://player.vimeo.com/video/722229024?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                                                frameborder="0"
+                                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                                                title="Proceso de producción audiovisual - PEM"></iframe>
+                                            <script src="https://player.vimeo.com/api/player.js"></script>
+                                        </div>
+                                        <p class="video-caption">Video : Proceso de producción audiovisual</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Dropzones (visible inicialmente) -->
+                            <div class="dropzone-container" id="dropzoneContainer">
+                                <!-- Conector vertical: Database -> Content (posicionado absolutamente) -->
+                                <div class="connector vertical-connector db-to-content" id="connectorDbToContent">
+                                    <div class="connector-flow"></div>
+                                </div>
+
+                                <!-- Zona para Base de Datos (arriba) -->
+                                <div class="preview-section database-section">
+                                    <div class="drop-zone database-zone" data-zone="database" data-element="database"
+                                        data-component="database">
+                                        <div class="wireframe-placeholder">
+                                            <svg height="50" width="50" version="1.1" id="_x32_"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                                                xml:space="preserve" fill="#cccccc">
+                                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                    stroke-linejoin="round"></g>
+                                                <g id="SVGRepo_iconCarrier">
+                                                    <style type="text/css">
+                                                        .st0 {
+                                                            fill: #cccccc;
+                                                        }
+                                                    </style>
+                                                    <g>
+                                                        <path class="st0"
+                                                            d="M459.991,82.262c-5.818-13.388-15.866-24.916-28.61-34.854c-19.179-14.896-44.758-26.522-74.674-34.691 C326.789,4.575,292.498,0,256,0c-55.622,0.036-106.071,10.548-143.848,28.374c-18.889,8.959-34.692,19.76-46.31,32.713 c-5.791,6.48-10.52,13.542-13.832,21.176c-3.304,7.634-5.146,15.866-5.138,24.29V405.44c-0.008,8.423,1.834,16.665,5.138,24.29 c5.818,13.388,15.866,24.915,28.61,34.863c19.18,14.896,44.757,26.523,74.675,34.692C185.211,507.425,219.503,511.992,256,512 c55.632-0.046,106.07-10.546,143.848-28.383c18.888-8.958,34.691-19.751,46.309-32.712c5.792-6.472,10.52-13.534,13.833-21.176 c3.304-7.624,5.146-15.867,5.137-24.29V106.552C465.137,98.128,463.295,89.896,459.991,82.262z M436.282,405.44 c-0.009,4.293-0.889,8.478-2.768,12.843c-3.268,7.597-9.849,15.766-19.861,23.545c-14.967,11.7-37.369,22.257-64.526,29.626 c-27.158,7.388-59.054,11.709-93.128,11.7c-51.909,0.046-98.818-10.084-131.503-25.606c-16.357-7.715-29.064-16.774-37.142-25.86 c-4.066-4.538-6.989-9.058-8.868-13.406c-1.88-4.366-2.76-8.55-2.769-12.843v-49.36c16.684,15.25,40.111,27.43,68.13,36.435 c32.304,10.32,70.789,16.247,112.152,16.256c55.16-0.027,105.164-10.493,142.306-28.029c14.931-7.08,27.693-15.368,37.976-24.798 V405.44z M436.282,321.198c-2.051,4.402-4.983,8.814-8.94,13.27c-12.78,14.396-35.917,27.948-65.77,37.442 c-29.844,9.548-66.287,15.23-105.572,15.222c-52.372,0.027-99.726-10.14-133.046-25.95c-16.674-7.87-29.763-17.137-38.294-26.714 c-3.958-4.456-6.89-8.868-8.942-13.26v-64.754c16.684,15.249,40.111,27.43,68.13,36.434 c32.304,10.311,70.789,16.238,112.152,16.248c55.16-0.028,105.164-10.492,142.306-28.03c14.931-7.08,27.693-15.357,37.976-24.788 V321.198z M436.282,221.572c-2.051,4.402-4.983,8.813-8.94,13.261c-12.78,14.395-35.917,27.956-65.77,37.441 c-29.844,9.549-66.287,15.231-105.572,15.222c-52.372,0.028-99.726-10.138-133.046-25.941 c-16.674-7.87-29.763-17.146-38.294-26.722c-3.958-4.448-6.89-8.859-8.942-13.261v-64.754c16.684,15.258,40.111,27.43,68.13,36.443 c32.304,10.32,70.789,16.247,112.152,16.247c55.16-0.027,105.164-10.484,142.306-28.029c14.931-7.08,27.693-15.358,37.976-24.789 V221.572z M436.282,121.936c-2.051,4.403-4.983,8.823-8.94,13.271c-12.78,14.405-35.917,27.956-65.77,37.451 c-29.844,9.548-66.287,15.23-105.572,15.222c-52.372,0.027-99.726-10.14-133.046-25.95c-16.674-7.879-29.763-17.147-38.294-26.722 c-3.958-4.448-6.89-8.868-8.942-13.262v-15.394c0.01-4.294,0.89-8.469,2.769-12.835c3.268-7.607,9.848-15.766,19.86-23.554 c14.968-11.7,37.369-22.256,64.526-29.617c27.158-7.398,59.053-11.709,93.127-11.7c51.91-0.046,98.819,10.085,131.504,25.606 c16.356,7.706,29.054,16.765,37.142,25.86c4.066,4.538,6.988,9.05,8.868,13.406c1.878,4.366,2.758,8.541,2.768,12.835V121.936z">
+                                                        </path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            <span>base de datos</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Zona para contenido (3 columnas abajo) -->
+                                <div class="preview-section content-section">
+                                    <!-- Conector horizontal: Content -> Styles -->
+                                    <div class="connector horizontal-connector content-to-styles"
+                                        id="connectorContentToStyles">
+                                        <div class="connector-flow"></div>
+                                    </div>
+
+                                    <!-- CSS Estilos (izquierda) -->
+                                    <div class="content-left">
+                                        <div class="drop-zone styles-zone" data-zone="styles" data-element="css"
+                                            data-component="styles">
+                                            <div class="wireframe-placeholder">
+                                                <svg height="50" width="50" version="1.1" id="_x32_"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                                                    xml:space="preserve" fill="#cccccc">
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round"></g>
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <style type="text/css">
+                                                            .st0 {
+                                                                fill: #cccccc;
+                                                            }
+                                                        </style>
+                                                        <g>
+                                                            <path class="st0"
+                                                                d="M378.413,0H208.297h-13.182L185.8,9.314L57.02,138.102l-9.314,9.314v13.176v265.514 c0,47.36,38.528,85.895,85.896,85.895h244.811c47.353,0,85.881-38.535,85.881-85.895V85.896C464.294,38.528,425.766,0,378.413,0z M432.497,426.105c0,29.877-24.214,54.091-54.084,54.091H133.602c-29.884,0-54.098-24.214-54.098-54.091V160.591h83.716 c24.885,0,45.077-20.178,45.077-45.07V31.804h170.116c29.87,0,54.084,24.214,54.084,54.092V426.105z">
+                                                            </path>
+                                                            <path class="st0"
+                                                                d="M169.574,268.949c5.837,0,9.104,2.171,12.499,6.786c2.709,3.805,5.432,5.167,8.825,5.167 c5.028,0,9.105-3.673,9.105-8.965c0-2.171-0.684-4.078-1.774-5.977c-4.622-8.288-14.802-14.669-28.655-14.669 c-16.171,0-28.124,7.603-33.012,22.685c-1.899,6.11-2.57,10.865-2.57,24.989c0,14.125,0.67,18.881,2.57,24.99 c4.888,15.081,16.841,22.685,33.012,22.685c13.853,0,24.033-6.382,28.655-14.67c1.09-1.899,1.774-3.805,1.774-5.976 c0-5.3-4.078-8.965-9.105-8.965c-3.393,0-6.116,1.361-8.825,5.16c-3.394,4.622-6.662,6.794-12.499,6.794 c-7.471,0-11.814-3.938-13.853-10.187c-1.089-3.393-1.494-6.654-1.494-19.83c0-13.175,0.406-16.436,1.494-19.829 C157.76,272.887,162.103,268.949,169.574,268.949z">
+                                                            </path>
+                                                            <path class="st0"
+                                                                d="M255.149,289.595l-4.888-0.684c-10.725-1.494-14.398-5.02-14.398-10.187c0-5.837,4.343-9.915,12.498-9.915 c5.698,0,11.409,1.634,15.892,3.805c1.899,0.95,3.938,1.494,5.837,1.494c4.888,0,8.7-3.666,8.7-8.693 c0-3.261-1.494-5.977-4.762-8.016c-5.432-3.394-15.612-6.11-25.806-6.11c-19.97,0-32.733,11.269-32.733,28.25 c0,16.304,10.32,25.13,29.2,27.713l4.901,0.677c10.99,1.494,14.258,4.888,14.258,10.32c0,6.389-5.306,10.872-15.082,10.872 c-6.787,0-12.219-1.767-19.83-5.977c-1.634-0.956-3.672-1.634-5.837-1.634c-5.166,0-8.965,3.938-8.965,8.832 c0,3.254,1.634,6.382,4.748,8.42c6.116,3.799,16.031,7.876,29.074,7.876c24.032,0,36.266-12.358,36.266-29.067 C284.223,300.865,274.307,292.311,255.149,289.595z">
+                                                            </path>
+                                                            <path class="st0"
+                                                                d="M338.697,289.595l-4.888-0.684c-10.738-1.494-14.398-5.02-14.398-10.187c0-5.837,4.344-9.915,12.484-9.915 c5.712,0,11.423,1.634,15.892,3.805c1.913,0.95,3.952,1.494,5.851,1.494c4.887,0,8.686-3.666,8.686-8.693 c0-3.261-1.494-5.977-4.748-8.016c-5.432-3.394-15.626-6.11-25.806-6.11c-19.969,0-32.733,11.269-32.733,28.25 c0,16.304,10.32,25.13,29.2,27.713l4.888,0.677c11.004,1.494,14.258,4.888,14.258,10.32c0,6.389-5.292,10.872-15.068,10.872 c-6.8,0-12.232-1.767-19.829-5.977c-1.634-0.956-3.673-1.634-5.851-1.634c-5.153,0-8.965,3.938-8.965,8.832 c0,3.254,1.634,6.382,4.762,8.42c6.117,3.799,16.032,7.876,29.06,7.876c24.047,0,36.266-12.358,36.266-29.067 C367.758,300.865,357.843,292.311,338.697,289.595z">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <span>estilos.css</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- HTML Contenido (centro) -->
+                                    <div class="content-center">
+                                        <div class="drop-zone content-zone" data-zone="content" data-element="html"
+                                            data-component="content">
+                                            <div class="wireframe-placeholder">
+                                                <svg height="50" width="50" version="1.1" id="_x32_"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                                                    xml:space="preserve" fill="#cccccc">
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round"></g>
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <style type="text/css">
+                                                            .st0 {
+                                                                fill: #cccccc;
+                                                            }
+                                                        </style>
+                                                        <g>
+                                                            <path class="st0"
+                                                                d="M378.413,0H208.297h-13.182L185.8,9.314L57.02,138.102l-9.314,9.314v13.176v265.514 c0,47.36,38.528,85.895,85.896,85.895h244.811c47.353,0,85.881-38.535,85.881-85.895V85.896C464.294,38.528,425.766,0,378.413,0z M432.497,426.105c0,29.877-24.214,54.091-54.084,54.091H133.602c-29.884,0-54.098-24.214-54.098-54.091V160.591h83.716 c24.885,0,45.077-20.178,45.077-45.07V31.804h170.116c29.87,0,54.084,24.214,54.084,54.092V426.105z">
+                                                            </path>
+                                                            <path class="st0"
+                                                                d="M163.164,253.19c-5.097,0-8.867,3.652-8.867,9.482v23.453c0,0.489-0.251,0.734-0.726,0.734h-26.993 c-0.475,0-0.726-0.245-0.726-0.734v-23.453c0-5.831-3.771-9.482-8.868-9.482c-5.222,0-8.993,3.652-8.993,9.482v65.144 c0,5.83,3.645,9.475,8.868,9.475c5.111,0,8.993-3.645,8.993-9.475v-24.305c0-0.489,0.251-0.734,0.726-0.734h26.993 c0.475,0,0.726,0.244,0.726,0.734v24.305c0,5.83,3.77,9.475,8.867,9.475c5.223,0,8.993-3.645,8.993-9.475v-65.144 C172.157,256.841,168.387,253.19,163.164,253.19z">
+                                                            </path>
+                                                            <path class="st0"
+                                                                d="M235.249,253.923h-47.284c-5.46,0-8.993,3.282-8.993,8.023c0,4.615,3.533,7.897,8.993,7.897h13.978 c0.488,0,0.726,0.244,0.726,0.726v57.247c0,5.711,3.771,9.475,8.882,9.475c5.223,0,8.993-3.764,8.993-9.475v-57.247 c0-0.482,0.237-0.726,0.726-0.726h13.978c5.46,0,8.993-3.282,8.993-7.897C244.242,257.204,240.709,253.923,235.249,253.923z">
+                                                            </path>
+                                                            <path class="st0"
+                                                                d="M318.253,253.19c-5.348,0-8.267,2.919-10.934,9.238l-17.26,39.862h-0.489l-17.623-39.862 c-2.794-6.319-5.712-9.238-11.06-9.238c-5.948,0-9.845,4.134-9.845,10.697v64.781c0,5.467,3.408,8.623,8.268,8.623 c4.622,0,8.029-3.156,8.029-8.623v-39.868h0.6l12.89,29.653c2.541,5.837,4.608,7.541,8.742,7.541c4.133,0,6.2-1.704,8.756-7.541 l12.764-29.653h0.601v39.868c0,5.467,3.281,8.623,8.141,8.623c4.874,0,8.156-3.156,8.156-8.623v-64.781 C327.987,257.323,324.216,253.19,318.253,253.19z">
+                                                            </path>
+                                                            <path class="st0"
+                                                                d="M389.36,320.645h-29.408c-0.489,0-0.726-0.244-0.726-0.734v-57.24c0-5.712-3.77-9.482-8.867-9.482 c-5.237,0-8.993,3.77-8.993,9.482v64.899c0,5.349,3.518,8.993,8.993,8.993h39.002c5.475,0,8.994-3.282,8.994-8.022 C398.354,323.926,394.835,320.645,389.36,320.645z">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <span>&lt;contenido&gt;</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- JavaScript (derecha) -->
+                                    <div class="content-right">
+                                        <div class="drop-zone interaction-zone" data-zone="interaction"
+                                            data-element="js" data-component="script">
+                                            <div class="wireframe-placeholder">
+                                                <svg height="50" width="50" version="1.1" id="_x32_"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512"
+                                                    xml:space="preserve" fill="#cccccc">
+                                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                                                        stroke-linejoin="round"></g>
+                                                    <g id="SVGRepo_iconCarrier">
+                                                        <style type="text/css">
+                                                            .st0 {
+                                                                fill: #cccccc;
+                                                            }
+                                                        </style>
+                                                        <g>
+                                                            <path class="st0"
+                                                                d="M378.413,0H208.297h-13.182L185.8,9.314L57.02,138.102l-9.314,9.314v13.176v265.514 c0,47.36,38.528,85.895,85.896,85.895h244.811c47.353,0,85.881-38.535,85.881-85.895V85.896C464.294,38.528,425.766,0,378.413,0z M432.497,426.105c0,29.877-24.214,54.091-54.084,54.091H133.602c-29.884,0-54.098-24.214-54.098-54.091V160.591h83.716 c24.885,0,45.077-20.178,45.077-45.07V31.804h170.116c29.87,0,54.084,24.214,54.084,54.092V426.105z">
+                                                            </path>
+                                                            <path class="st0"
+                                                                d="M225.334,251.968c-5.711,0-9.915,4.078-9.915,10.592v50.803c0,11.409-5.027,15.62-12.638,15.62 c-2.988,0-6.102-0.95-8.281-2.444c-2.988-2.039-5.166-2.989-7.61-2.989c-5.027,0-8.826,3.666-8.826,8.42 c0,2.444,0.95,4.888,2.723,6.927c3.798,4.35,12.763,7.743,21.324,7.743c21.184,0,33.278-11.954,33.278-34.639V262.56 C235.389,256.046,231.171,251.968,225.334,251.968z">
+                                                            </path>
+                                                            <path class="st0"
+                                                                d="M293.257,289.595l-4.888-0.684c-10.738-1.494-14.397-5.02-14.397-10.187c0-5.837,4.343-9.915,12.484-9.915 c5.711,0,11.423,1.634,15.891,3.805c1.913,0.95,3.953,1.494,5.852,1.494c4.888,0,8.686-3.666,8.686-8.693 c0-3.261-1.494-5.977-4.748-8.016c-5.432-3.394-15.627-6.11-25.806-6.11c-19.97,0-32.733,11.269-32.733,28.25 c0,16.304,10.32,25.13,29.199,27.713l4.888,0.677c11.004,1.494,14.258,4.888,14.258,10.32c0,6.389-5.293,10.872-15.067,10.872 c-6.801,0-12.234-1.767-19.83-5.977c-1.634-0.956-3.673-1.634-5.851-1.634c-5.153,0-8.965,3.938-8.965,8.832 c0,3.254,1.634,6.382,4.762,8.42c6.116,3.799,16.031,7.876,29.06,7.876c24.047,0,36.266-12.358,36.266-29.067 C322.317,300.865,312.403,292.311,293.257,289.595z">
+                                                            </path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                                <span>codigo.js</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Conector horizontal: Content -> Code -->
+                                    <div class="connector horizontal-connector content-to-code"
+                                        id="connectorContentToCode">
+                                        <div class="connector-flow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fin dropzone-container -->
+                        </div>
+                    </div>
+
+                    <button class="submit-btn" id="visualizeBtn" style="display: none;">
+                        Visualizar resultado
+                    </button>
+
+                    <button class="submit-btn" id="submitBtn" style="display: none;">
+                        Enviar a revisión final
+                    </button>
+                </div>
+
+                <!-- Engranaje de procesamiento -->
+                <div class="processing-gear" id="processingGear">
+                    <svg fill="#000000" viewBox="-1 0 19 19" xmlns="http://www.w3.org/2000/svg" class="cf-icon-svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M16.417 9.583A7.917 7.917 0 1 1 8.5 1.666a7.917 7.917 0 0 1 7.917 7.917zm-2.327-.557a.391.391 0 0 0-.312-.371l-.952-.165a.315.315 0 0 0-.05-.003 4.386 4.386 0 0 0-.467-1.125.344.344 0 0 0 .034-.039l.556-.79a.391.391 0 0 0-.041-.482l-.81-.81a.391.391 0 0 0-.483-.042l-.79.557a.315.315 0 0 0-.039.033 4.41 4.41 0 0 0-1.124-.466.284.284 0 0 0-.004-.05l-.164-.952a.391.391 0 0 0-.37-.312H7.926a.39.39 0 0 0-.37.312l-.165.951a.315.315 0 0 0-.004.05 4.408 4.408 0 0 0-1.125.467.293.293 0 0 0-.039-.033L5.435 5.2a.391.391 0 0 0-.483.042l-.81.81a.391.391 0 0 0-.042.483l.557.79a.313.313 0 0 0 .033.038 4.397 4.397 0 0 0-.466 1.125.316.316 0 0 0-.05.003l-.952.165a.391.391 0 0 0-.312.37v1.147a.39.39 0 0 0 .312.37l.952.165a.317.317 0 0 0 .05.004 4.396 4.396 0 0 0 .466 1.124.313.313 0 0 0-.033.04l-.557.789a.391.391 0 0 0 .042.482l.81.81a.39.39 0 0 0 .483.042l.79-.557a.293.293 0 0 0 .039-.033 4.375 4.375 0 0 0 1.124.466.316.316 0 0 0 .004.051l.164.952a.39.39 0 0 0 .371.312h1.146a.391.391 0 0 0 .37-.312l.165-.952a.285.285 0 0 0 .004-.05 4.377 4.377 0 0 0 1.124-.467.315.315 0 0 0 .04.033l.789.557a.39.39 0 0 0 .483-.041l.81-.81a.391.391 0 0 0 .042-.483l-.557-.79a.344.344 0 0 0-.033-.039 4.386 4.386 0 0 0 .466-1.124.316.316 0 0 0 .05-.004l.952-.165a.39.39 0 0 0 .312-.37zm-3.686.573A1.904 1.904 0 1 1 8.5 7.695a1.904 1.904 0 0 1 1.904 1.904z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span>Procesando...</span>
+                </div>
+
+                <!-- Componentes de código arrastrables (derecha) -->
+                <div class="documents-area">
+                    <div class="docs-title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+                        </svg>
+                        <span>Arrastra el código</span>
+                    </div>
+
+                    <!-- Database Component -->
+                    <div class="draggable-item code-item database-item" data-doc="database" data-element="database"
+                        data-component="database">
+                        <div class="code-icon">
+                            <div class="code-tag">DB</div>
+                        </div>
+                        <div class="code-label">
+                            <span class="code-type">DATABASE</span>
+                            <span class="code-name">Base de datos</span>
+                        </div>
+                    </div>
+
+                    <!-- CSS Styles Component -->
+                    <div class="draggable-item code-item css-item" data-doc="css-styles" data-element="css"
+                        data-component="styles">
+                        <div class="code-icon">
+                            <div class="code-tag">{ }</div>
+                        </div>
+                        <div class="code-label">
+                            <span class="code-type">CSS</span>
+                            <span class="code-name">Estilos</span>
+                        </div>
+                    </div>
+
+                    <!-- HTML Content Component -->
+                    <div class="draggable-item code-item html-item" data-doc="html-content" data-element="html"
+                        data-component="content">
+                        <div class="code-icon">
+                            <div class="code-tag">&lt;/&gt;</div>
+                        </div>
+                        <div class="code-label">
+                            <span class="code-type">HTML</span>
+                            <span class="code-name">Contenido</span>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript Component -->
+                    <div class="draggable-item code-item js-item" data-doc="js-script" data-element="js"
+                        data-component="script">
+                        <div class="code-icon">
+                            <div class="code-tag">JS</div>
+                        </div>
+                        <div class="code-label">
+                            <span class="code-type">JavaScript</span>
+                            <span class="code-name">Interacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <button class="close-modal" id="btn_close" title="Cerrar">&times;</button>
+</div>
+<div class="overlay hidden" id="overlay"></div>
+
+<!-- Overlay del mensaje de éxito (fuera del modal) -->
+<div class="success-overlay" id="successOverlay" style="display: none;">
+    <div class="success-screen" id="successMsg">
+        <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="3">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-5" />
+            </svg>
+        </div>
+        <h1>¡DESARROLLO FINALIZADO!</h1>
+        <p>¡El desarrollado del sitio web se ha completado exitosamente!</p>
+        <button class="continue-btn" id="continueBtn">Continuar</button>
+    </div>
+</div>
+
+<!-- Consola de compilación -->
+<div class="code-console" id="codeConsole">
+    <div class="console-header">
+        <span class="console-title">$ Terminal</span>
+        <div class="console-dots">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+    <div class="console-body">
+        <div class="console-line"><span class="prompt">$</span> <span class="command">npm install</span></div>
+        <div class="console-line success">✓ Component loaded successfully</div>
+        <div class="console-line"><span class="prompt">$</span> <span class="command">Building...</span></div>
+        <div class="console-line success">✓ Build completed</div>
+    </div>
+</div>
+
+<!-- Líneas de código flotantes -->
+<div class="code-rain" id="codeRain"></div>

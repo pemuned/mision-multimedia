@@ -1,0 +1,79 @@
+<div class="modal hidden">
+    <div id="background-modal"></div>
+    <div class="modal-content">
+
+        <div class="game-container">
+            <!-- Título del juego -->
+            <div class="game-header">
+                <div class="character-avatar" id="avatarLeft">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M3 21v-2a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2" />
+                    </svg>
+                </div>
+                <div class="speech-bubble">
+                    <p>Ordena los pasos para evaluar y corregir el contenido inicial.</p>
+                </div>
+            </div>
+
+            <!-- Contenedor principal -->
+            <div class="game-content">
+                <!-- Avatar izquierdo -->
+                <div class="side-avatar left-avatar">
+                    <div class="avatar-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="5" />
+                            <path d="M3 21v-2a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Área central con globo de pensamiento -->
+                <div class="center-area">
+                    <div class="tooltip">
+                        <div class="sortable-list" id="sortableList">
+                            <!-- Los elementos se generarán dinámicamente con JavaScript -->
+                        </div>
+                    </div>
+
+                    <button class="submit-btn" id="submitBtn" style="display: none;">
+                        Verificar Orden
+                    </button>
+                </div>
+
+                <!-- Avatar derecho -->
+                <div class="side-avatar right-avatar">
+                    <div class="avatar-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="5" />
+                            <path d="M3 21v-2a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v2" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <button class="close-modal" id="btn_close" title="Cerrar">&times;</button>
+</div>
+<div class="overlay hidden" id="overlay"></div>
+
+<!-- Overlay del mensaje de éxito (fuera del modal) -->
+<div class="success-overlay" id="successOverlay" style="display: none;">
+    <div class="success-screen" id="successMsg">
+        <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="3">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 12l3 3 5-5" />
+            </svg>
+        </div>
+        <h1>¡EXCELENTE!</h1>
+        <p>¡Ordenaste correctamente los pasos para evaluar y corregir el contenido inicial!</p>
+        <button class="continue-btn" id="continueBtn">Continuar</button>
+    </div>
+</div>

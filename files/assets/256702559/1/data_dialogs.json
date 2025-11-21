@@ -1,0 +1,291 @@
+{
+    "data": [
+        {
+            "title": "GENERO",
+            "text": "",
+            "0": {
+                "welcome": "Bienvenida",
+                "_lo_la": "la",
+                "_o_a": "a",
+                "_el_la": "la",
+                "_a": "a",
+                "role": "SOLICITANTE"
+            },
+            "1": {
+                "welcome": "Bienvenido",
+                "_lo_la": "lo",
+                "_o_a": "o",
+                "_el_la": "el",
+                "_a": "",
+                "role": "SOLICITANTE"
+            },
+            "level": "_GENDER"
+        },
+        {
+            "title": "WELCOME MESSAGE",
+            "text": "Completar los 6 pasos para la creación de un material didáctico multimedia en el Programa de Producción Electrónica Multimedial (PEM) de la UNED.",
+            "level": "_WELCOME"
+        },
+        {
+            "title": "PRODUCTORES",
+            "text": "",
+            "name": {
+                "0": "MARCO",
+                "1": "MARIO",
+                "2": "PAUL",
+                "3": "SEIDY"
+            },
+            "level": "_PRODUCERS"
+        },
+        {
+            "title": "DISEÑADORES",
+            "text": "",
+            "name": {
+                "0": "CAROLINA",
+                "1": "PABLO",
+                "2": "RAQUEL",
+                "3": "VIVIAN"
+            },
+            "level": "_DESIGNERS"
+        },
+        {
+            "title": "DESARROLLADORES",
+            "text": "",
+            "name": {
+                "0": "DEIVER",
+                "1": "ROMMY",
+                "2": "YURI"
+            },
+            "level": "_DEVELOPERS"
+        },
+        {
+            "title": "ROCÍO - AUXILIAR ADMINISTRATIVA",
+            "text": "¡Buenos días! @welcome al Programa de Producción Electrónica Multimedial ¿En qué le podemos ayudar?",
+            "level": "0"
+        },
+        {
+            "title": "@player_name - @player_title",
+            "text": "Buenas, soy @player_name. Tengo cita para conversar sobre la posibilidad de producir un material educativo con ustedes.",
+            "level": "1"
+        },
+        {
+            "title": "ROCÍO - AUXILIAR ADMINISTRATIVA",
+            "text": "¡Claro! @player_name, ya el coordinador @_lo_la está esperando, pase a la oficina de coordinación. Está al final de la sala central.",
+            "level": "2"
+        },
+        {
+            "title": "@player_name - @player_title",
+            "text": "He llegado a la oficina del coordinador del PEM. Espero traer todo listo para la reunión inicial.",
+            "level": "3"
+        },
+        {
+            "title": "JUAN DIEGO - COORDINACIÓN DEL PEM",
+            "text": "¡Hola! @player_name. Soy el coordinador del PEM. Tengo entendido que usted desea realizar la solicitud de un material multimedia.",
+            "level": "4"
+        },
+        {
+            "title": "@player_name - @player_title",
+            "text": "Buenos días Juan Diego. Sí, vengo a solicitar un material multimedia educativo para una asignatura a mi cargo.",
+            "level": "5"
+        },
+        {
+            "title": "JUAN DIEGO - COORDINACIÓN DEL PEM",
+            "text": "Claro, para comenzar el proceso usted tiene que llenar el formulario de solicitud que se encuentra en nuestra página web, y adjuntar una serie de documentos que son requisito. Justo ahora se encuentra abierto el período de recepción.",
+            "level": "6"
+        },
+        {
+            "title": "@player_name - @player_title",
+            "text": "Listo, ya envié el formulario de solicitud en línea y los documentos requeridos para iniciar el proceso.",
+            "level": "7"
+        },
+        {
+            "title": "JUAN DIEGO - COORDINACIÓN DEL PEM",
+            "text": "¡Excelente! Después de revisar el formulario enviado, y contar con la autorización de la autoridad respectiva, tenemos lo requerido para comenzar la preproducción. Diríjase al Área de Preprodución, donde podrá reunirse con el productor académico asignado, y así puedan dar inicio al proyecto.",
+            "level": "8"
+        },
+        {
+            "title": "@player_name - @player_title",
+            "text": "He llegado al Área de Preproducción, estoy list@_o_a para reunirme con la persona funcionaria de producción académica que me asignaron.",
+            "level": "9"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "¡Hola @player_name! Soy @producer_name. Me han asignado la producción de este material, revisé el contenido que nos envió y en términos generales está bien, pero necesitamos trabajar y ordenar en conjunto algunos conceptos para transformarlo en un multimedia y poder comenzar con el guion.",
+            "level": "10"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "Después de estos procesos ya contamos con el contenido final para elaborar el guion. Le enviaré actualizaciones por correo electrónico y pronto coordinaré una reunión virtual para obtener su visto bueno. Voy a producir el guion.",
+            "level": "11"
+        },
+        {
+            "title": "@player_name - @player_title",
+            "text": "De acuerdo, muchas gracias @producer_name por su apoyo en la preproducción del material. Quedo atent@_o_a a las actualizaciones del guion para continuar con el proceso. Me retiro por ahora.",
+            "level": "12"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "De ahora en adelante me encargaré yo. Debo recopilar y armar todo el contenido que me proporcionó @_el_la solicitante y comenzar a elaborar el guion del material.",
+            "level": "13"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "Ahora me reuniré vía videollamada con @player_name para revisar el guion preliminar y obtener su visto bueno antes de avanzar a la siguiente etapa.",
+            "level": "14"
+        },
+        {
+            "title": "@player_name - @player_title",
+            "text": "¡Hola @producer_name! He revisado el guion preliminar que me envió y en general me parece muy bien. Aproveché para aportar unos comentarios menores que le enviaré por correo junto al guion revisado y aprobado.",
+            "level": "15"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "Muchas gracias por la revisión y los comentarios, @player_name. Nos vemos más adelante y le mantendré informad@_o_a sobre los avances. Iré a revisar el correo electrónico para descargar el guion aprobado y comenzar con la producción.",
+            "level": "16"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "Perfecto, ya con el guion listo, me reuniré con el personal de diseño y desarrollo asignado para iniciar la producción del material.",
+            "level": "17"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "Permiso, ¿Puedo pasar? Vengo a entregar el guion finalizado para la producción de un nuevo material multimedia educativo.",
+            "level": "18"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "¡Hola! @designer_name y @developer_name. Este es un nuevo material que vamos a trabajar, ya tenemos listo el guion con los contenidos, ahora pensemos cómo diseñar la propuesta visual además de su estructura y funcionamiento en programación.",
+            "level": "19"
+        },
+        {
+            "title": "@designer_name - DISEÑO GRÁFICO",
+            "text": "Claro, voy a revisar la lista de requerimientos, para ver cuántos recursos gráficos necesitaremos y diseñarlos junto con la propuesta de interfaz.",
+            "level": "20"
+        },
+        {
+            "title": "@designer_name - DISEÑO GRÁFICO",
+            "text": "Listo ya tengo la propuesta de diseño y los insumos ¿Qué les parece?",
+            "level": "21"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "¡Excelente!, me parece bien, ya podemos pasarlo a programación y comenzar a desarrollar el material multimedia educativo.",
+            "level": "22"
+        },
+        {
+            "title": "@developer_name - DESARROLLO",
+            "text": "Estoy de acuerdo, veo que la propuesta es factible. Comenzaré con la estructura y después la programación de los componentes funcionales del material.",
+            "level": "23"
+        },
+        {
+            "title": "@developer_name - DESARROLLO",
+            "text": "La programación ya está lista, y el material ya es funcional, pueden revisarlo.",
+            "level": "24"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "Excelente trabajo como siempre equipo. Iré a la sala de juntas para reunirme con @player_name a presentrale el material y así obtener su visto bueno para la publicación final.",
+            "level": "25"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "¡Hola @player_name! Bienvenid@_o_a de nuevo al PEM. Hemos finalizado el material multimedia solicitado. Me gustaría presentarle el producto final para que pueda revisarlo y darnos su aprobación para la publicación.",
+            "level": "26"
+        },
+        {
+            "title": "@player_name - @player_title",
+            "text": "¡Hola @producer_name! Gracias por recibirme nuevamente. Estoy ansios@_o_a por ver el material finalizado y utilizarlo en mi asignatura. Por favor, adelante con la presentación.",
+            "level": "27"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "Como podrá ver, incluye el contenido que trabajamos en conjunto, el diseño gráfico que revisamos en los avances previos y la funcionalidad e interacción según lo conversado. Le pido que lo revise detenidamente y me indique si cuenta con su aprobación para proceder con la publicación.",
+            "level": "28"
+        },
+        {
+            "title": "@player_name - @player_title",
+            "text": "¡Excelente trabajo @producer_name! El material superó todas mis expectativas. Mientras lo revisaba lo compartí con mi equipo y me confirman que están muy satisfechos con el resultado. Apruebo oficialmente su publicación.",
+            "level": "29"
+        },
+        {
+            "title": "@producer_name - PRODUCCIÓN ACADÉMICA",
+            "text": "Muchas gracias por su aprobación, @player_name. Procederemos con la publicación del material en nuestro catálogo digital \"Multimediauned\". Agradecemos su confianza en nuestro equipo y esperamos poder colaborar nuevamente en futuros proyectos.",
+            "level": "30"
+        },
+        {
+            "title": "@player_name - @player_title",
+            "text": "¡Perfecto! Muchas gracias a todo el equipo del PEM por su excelente trabajo. Será un recurso de gran valor para nuestros estudiantes. Hasta luego.",
+            "level": "31"
+        },
+        {
+            "title": "DIALOGOS GENERALES PEM",
+            "texts": {
+                "any": [
+                    "Utilizamos diferentes tecnologías para el desarrollo de nuestros materiales.",
+                    "¿Sabías que el PEM nació en 1998? Fue una decisión del Consejo Universitario. Pero hasta el 2000 inició labores formalmente.",
+                    "Hace muchos años, cuando el PEM inició trabajábamos los materiales con Flash, ahora hemos migrado a nuevas tecnologías y todos los materiales están disponibles en web.",
+                    "Cada una de nuestras producciones es elaborada en equipo, por lo general hay una persona que se encarga del contenido, otra de la producción, otra del diseño gráfico, otra de la programación y otra de la producción audiovisual.",
+                    "Aquí en el PEM hicimos la herramienta que genera códigos QR en la UNED ¿La has usado? Es gratis, se llama QR UNED y entrás con el correo de funcionario.",
+                    "En el PEM hemos hecho herramientas útiles como Insignia UNED, un sistema para adjudicar insignias a usuarios. Es una forma gamificada de reconocer un logro a un estudiante.",
+                    "Nos apasiona combinar pedagogía, diseño y tecnología. Esa es nuestra receta mágica.",
+                    "Tenemos materiales de muchos temas, que están abiertos a todo público. Por ejemplo tenemos un simulador de precios y costos que puede utilizar cualquier emprendedor.",
+                    "Nuestro primer material fue sobre educación especial, allá por el 2001. ¡Todo un reto técnico!",
+                    "Nos gusta pensar que cada clic del estudiante es una oportunidad de aprendizaje.",
+                    "El PEM no solo produce materiales, también investiga cómo aprendes mientras los usas.",
+                    "Nos tomamos en serio la accesibilidad. Cada recurso debe ser inclusivo y usable por todos.",
+                    "Analizamos qué recursos usan más los estudiantes. ¡Algunos tienen miles de visitas!, incluso desde el extranjero.",
+                    "¿Sabías que muchos materiales tienen locuciones y animación original hecha aquí mismo?",
+                    "He visto pasar decenas de proyectos… cada uno con su toque único. Por eso en el PEM no usamos plantillas, cada material tiene su estilo particular.",
+                    "¿Sabías que trabajamos con todas las escuelas y programas de la UNED? Solicitar un material no es complicado, puedes hablar con Rocío en recepción o con el coordinador.",
+                    "Aquí producimos materiales educativos interactivos: videos, animaciones, recursos web, apps… todo pensado para apoyar la educación a distancia.",
+                    "En el PEM también investigamos sobre accesibilidad, diseño pedagógico y nuevas tecnologías.",
+                    "Antes nuestros materiales se entregaban en CD, ahora desarrollamos plataformas en línea y tenemos nuestro propio catálogo, que se llama \"Multimediauned\", deberías visitarlo, está lleno de materiales gratuitos.",
+                    "Los materiales del PEM son gratuitos y de libre acceso, cualquier persona los puede utilizar.",
+                    "De CD a plataformas web: la transición digital del PEM fue toda una revolución educativa.",
+                    "Cada recurso que subimos representa meses de esfuerzo y lo mejor es saber que estará disponible para todos, sin barreras."
+                ],
+                "producer": [
+                    "Revisamos cada solicitud con lupa. Si falta información, la devolvemos con recomendaciones.",
+                    "En la preproducción afinamos el contenido: mediación pedagógica, lenguaje multimedial y claridad.",
+                    "Los productores trabajamos junto al especialista para transformar textos en experiencias.",
+                    "El guion multimedia es nuestra guía: define cómo se verá, sonará y sentirá el recurso educativo.",
+                    "Todos los textos de un material pasan por revisión de estilo. Todo debe ser claro, inclusivo y coherente."
+                ],
+                "designer": [
+                    "A partir del guion que nos da el productor, creamos la metáfora pedagógica. Es el alma visual del material.",
+                    "Cada botón, color y animación tiene un propósito educativo.",
+                    "El diseño gráfico no es decoración, es utilizar la comunicación visual para sacar el máximo provecho de un contenido."
+                ],
+                "developer": [
+                    "En programación nos toca dar vida a lo que antes solo estaba en papel; tomamos todo el contenido y los recursos gráficos y audiovisuales, y los integramos para que sean funcionales y accesibles.",
+                    "Hay que probar cada botón y cada interacción. Nada se deja al azar.",
+                    "Hacemos pruebas para verificar que un material funcione igual en distintos dispositivos.",
+                    "Solo cuando todo está aprobado, publicamos un material.",
+                    "Me gusta que mis materiales sean livianos para que no consuman muchos recursos del usuario, por eso procuro optimizarlos lo más que pueda."
+                ]
+            },
+            "level": "_NPC_DIALOGS"
+        },
+        {
+            "title": "RÓTULOS",
+            "texts": [
+                "Insignia UNED es una plataforma que permite generar y adjudicar insignias digitales bajo el estándar de Open Badges 2.0.",
+                "QR UNED es un sistema web que le permitirá crear y gestionar códigos QR y direcciones web cortas. Es de uso exclusivo para funcionarios de la UNED.",
+                "El Blog SONAR Multimedia es un espacio para compartir con la comunidad universitaria las buenas prácticas, experiencias, resultados, procesos y aprendizajes a los que el PEM se ha enfrentado durante su trayectoria en la generación de materiales didácticos.",
+                "MENTOR Multimedia es una plataforma del PEM para compartir conocimientos en formato de mentoría.",
+                "Un laboratorio virtual es un material multimedia que hace énfasis en la experimentación acerca de un tema en particular.",
+                "Un libro digital multimedia es un material compuesto en su mayor parte por texto, imágenes e hipertexto, que en ocasiones puede presentar animaciones, videos, sonidos y actividades.",
+                "Un módulo de contenido es un material multimedia autosuficiente que responde a varios objetivos de aprendizaje y que se delimita como un área temática particular para su uso en una asignatura.",
+                "Una unidad didáctica multimedia es un material con uso intensivo de la imagen, el video, el sonido y la interacción, y contempla la mayoría de los contenidos y actividades de una asignatura.",
+                "Un objeto de aprendizaje es un material multimedia autosuficiente con un objetivo de aprendizaje específico, que es interoperable y escalable.",
+                "El Programa de Producción Electrónica Multimedial PEM es la dependencia que desarrolla materiales digitales multimedia para el apoyo de los procesos de aprendizaje a distancia en la UNED. Para más información escanee el código QR o visite https://linktr.ee/multimediauned.",
+                "Este año 2025 el PEM celebra 25 años de trayectoria en producción de materiales educativos multimedia.",
+                "Insignias, stickers y algo que parece ser ... ¿Un tamal congelado?",
+                "Estás en las oficinas centrales del Programa de Producción Electrónica Multimedial (PEM) - UNED.",
+                "Has finalizado el juego, ahora puedes explorar libremente las oficinas del PEM."
+            ],
+            "level": "_BANNERS"
+        }
+    ]
+}
